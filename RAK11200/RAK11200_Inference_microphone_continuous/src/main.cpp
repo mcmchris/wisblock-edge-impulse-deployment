@@ -45,12 +45,11 @@
  */
 
 /* Includes ---------------------------------------------------------------- */
+#include <WisBlock_WakeUp_inferencing.h> //Change this library for your trained model one
+
 #include <PDM.h>
-//#include <WisBlock_WakeUp_inferencing.h>
-#include <WisSound_inferencing.h>
 #include "freertos/FreeRTOS.h"
 #include "freertos/task.h"
-
 
 // Forward definitions
 static bool microphone_inference_start(uint32_t n_samples);
@@ -211,7 +210,6 @@ static bool microphone_inference_start(uint32_t n_samples)
     inference.buf_count = 0;
     inference.n_samples = n_samples;
     inference.buf_ready = 0;
-
 
     // initialize PDM with:
     // - one channel (mono mode)

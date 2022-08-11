@@ -46,8 +46,8 @@
 
 /* Includes ---------------------------------------------------------------- */
 #include <PDM.h>
-//#include <WisBlock_WakeUp_inferencing.h> 
-#include <WisSound_inferencing.h>
+#include <WisBlock_WakeUp_inferencing.h> 
+
 
 #define PDM_DIN 21  //D8 //21
 #define PDM_CLK 4   //A0  //4
